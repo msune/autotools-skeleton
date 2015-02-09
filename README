@@ -17,7 +17,7 @@ Simple steps to create a new autotools project
 
 1) Clone the repository
 
-2) Give a quick try:
+2) Give it a quick try:
 
         ~# bash autogen.sh
         ~# cd build/
