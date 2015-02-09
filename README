@@ -1,0 +1,61 @@
+
+Autotools skeleton
+-----------------
+
+A simple autotools skeleton for quickly setting up new projects
+
+
+Requirements
+------------
+
+* Automake
+* Autoconf
+* Libtool
+
+Simple steps to create a new autotools project
+----------------------------------------------
+
+1) Clone the repository
+
+2) Give a quick try:
+
+        ~# bash autogen.sh
+        ~# cd build/
+        ~# ../configure
+        ~# make
+        ~# ./src/my_program
+        ~# make check
+        ~# make install
+        ~# my_program
+        ~# make uninstall
+
+3) Remove `.git/` folder
+
+4) Change parameters in `configure.ac`, specially `AC_INIT()` ones
+
+5) Import your code, setup your favourite revision control system and start customizing the configure.ac and Makefile.am(s) for your project structure...
+
+have fun!
+
+FAQ
+---
+
+* _I get an error after modifying the structure of my project, what shall I do?_
+
+  Try re-running autogen.sh first. If this doesn't help you most likely have a misconfiguration.
+
+* _Once I do `make install`, `my_program` is not in the path or I cannot link against `libmy_lib.so/a`_.
+
+  This skeleton installs by default binaries in `/usr/local/bin`, and libraries in `/usr/local/lib`. Make sure they are on the path and `LD_LIBRARY_PATH`.
+
+TODO
+----
+
+* Add `--enable-feature-x` and `--with-feature-y` switch cases in configure.ac
+* Add library checks at configure time
+* Add custom `config.h.in`
+
+Author
+------
+
+Marc Sune Clos `<marcdevel (at) gmail (dot) com>`
