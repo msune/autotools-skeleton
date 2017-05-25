@@ -1,3 +1,4 @@
+m4_include([VERSION]) #Force reconf on VERSION change
 AC_INIT(MY_PROJECT, m4_esyscmd_s(cat VERSION), john@doe.com, MyProject, http://github.com/msune/autotools-skeleton)
 
 AC_CONFIG_AUX_DIR([build-aux])
