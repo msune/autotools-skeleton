@@ -4,7 +4,6 @@ MAINTAINERCLEANFILES = Makefile.in
 # Non distributable lib
 #
 
-#Simple distributable library
 noinst_LTLIBRARIES = libmy_sublib.la
 
 #Library sources
